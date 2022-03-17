@@ -1,15 +1,11 @@
 {
     "products": [{
-            "name": "SP 1",
-            "id": 1
+            "id": 5,
+            "name": "SP 5"
         },
         {
-            "name": "SP 2",
-            "id": 2
-        },
-        {
-            "name": "SP 3",
-            "id": 3
+            "id": 6,
+            "name": "SP 6"
         }
     ]
 }
