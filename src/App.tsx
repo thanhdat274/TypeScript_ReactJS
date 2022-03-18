@@ -11,6 +11,7 @@ import AdminLayout from './pages/layouts/AdminLayout';
 import Dashboard from './pages/Dashboard';
 import ManagerProduct from './pages/ManagerProduct';
 import "bootstrap/dist/css/bootstrap.min.css"
+import ProductAdd from './pages/ProductAdd';
 
 
 function App() {
@@ -44,6 +45,7 @@ function App() {
             <Route index element={<Navigate to="dashboard" />} />
             <Route path='dashboard' element={<Dashboard />} />
             <Route path='product' element={<ManagerProduct data={product} />} />
+            <Route path='/admin/product/add' element={<ProductAdd/>} />
           </Route>
 
         </Routes>
