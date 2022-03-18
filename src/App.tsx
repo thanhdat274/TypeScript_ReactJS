@@ -10,6 +10,7 @@ import Product from './pages/Product';
 import AdminLayout from './pages/layouts/AdminLayout';
 import Dashboard from './pages/Dashboard';
 import ManagerProduct from './pages/ManagerProduct';
+import "bootstrap/dist/css/bootstrap.min.css"
 
 
 function App() {
@@ -31,37 +32,8 @@ function App() {
 
   return (
     <div className='App'>
-      {/* <table>
-       <thead>
-          <th>ID</th>
-          <th>Name</th>
-          <th></th>
-       </thead>
-       <tbody>
-         {product.map(item =>{
-           return <tr>
-             <td>{item.id}</td>
-             <td>{item.name}</td>
-             <td>
-               <button onClick={()=> removeItem(item.id)}>Remove</button>
-             </td>
-           </tr>
-         })}
-       </tbody>
-     </table> */}
-
-      {/* <header>
-       <ul>
-         <li><NavLink to="/">Home Page</NavLink></li>
-         <li><NavLink to="/product">Product Page</NavLink></li>
-         <li><NavLink to="/admin/dashboard">Admin</NavLink></li>
-       </ul>
-     </header> */}
       <main>
         <Routes>
-          {/* <Route path="/" element={<h1>Home Page</h1>} />
-          <Route path="product" element={<h1>Product Page</h1>} />
-          <Route path="about" element={<h1>About Page</h1>} /> */}
 
           <Route path='/' element={<WebsiteLayout />}>
             <Route index element={<Home />} />
@@ -71,7 +43,7 @@ function App() {
           <Route path='admin' element={<AdminLayout />}>
             <Route index element={<Navigate to="dashboard" />} />
             <Route path='dashboard' element={<Dashboard />} />
-            <Route path='product' element={<ManagerProduct />} />
+            <Route path='product' element={<ManagerProduct data={product} />} />
           </Route>
 
         </Routes>
