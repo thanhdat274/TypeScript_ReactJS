@@ -13,3 +13,11 @@
     "target": "es2018",
     "outDir": "./dist", -> Đầu ra sau khi compiler
     "baseUrl": "./src", -> Đầu vào
+
+- Cài đặt môi trường typescript: npm i -g typescript
+- Cài đặt tsconfig.json: tsc --init
+- Cài đặt môi trường reactJS: npm init vite@latest my-app -- --template react
+- Cài đặt môi trường react_typescript: npm init vite@latest my-app -- --template react-ts
+- Cài đặt môi trường bootstrap: npm i bootstrap
+- Cài đặt môi trường react-router-dom: npm i react-router-dom
+- Cài đặt axios: npm i axios
