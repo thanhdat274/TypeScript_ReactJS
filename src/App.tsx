@@ -51,6 +51,7 @@ function App() {
             <Route path='dashboard' element={<Dashboard />} />
             <Route path='product' element={<ManagerProduct data={product} />} />
             <Route path='/admin/product/add' element={<ProductAdd onAdd={onHandleAdd} />} />
+            <Route path='/admin/product/add' element={<ProductAdd onAdd={onHandleAdd} />} />
           </Route>
 
         </Routes>
