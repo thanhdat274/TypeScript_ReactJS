@@ -1,16 +1,16 @@
 import React from 'react'
-import { NavLink } from 'react-router-dom'
+import { Link } from 'react-router-dom'
 import { ProductType } from '../types/product'
 
 type ManagerProduct = {
-  data: ProductType[]
+  data: ProductType[],
+  onRemove: (id: number) => void
 }
 
 const ManagerProduct = (props: ManagerProduct) => {
   return (
-    <div>
-      <NavLink to="/admin/product/add">ADD</NavLink>
-      <table>
+    <div className='container'>
+      <table className='table table-bordered'>
         <thead>
           <tr>
             <th>ID</th>
@@ -24,7 +24,8 @@ const ManagerProduct = (props: ManagerProduct) => {
               <td>{index + 1}</td>
               <td>{item.name}</td>
               <td>
-                {/* <button onClick={() => removeItem(item.id)}>Remove</button> */}
+                <Link to={`/admin/product/${item.id}/edit`}>Edit</Link>
+                <button onClick={() => props.onRemove(item.id)}>Remove</button>
               </td>
             </tr>
           })}
