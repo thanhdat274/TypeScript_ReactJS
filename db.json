@@ -1,22 +1,18 @@
 {
-  "products": [
-    {
-      "id": 5,
-      "name": "SP 5"
-    },
-    {
-      "id": 6,
-      "name": "SP 6"
-    },
-    {
-      "name": "NGUYỄN THÀNH ĐẠT ",
-      "price": "100000",
-      "id": 7
-    },
-    {
-      "name": "Thành Đạt Nguyễn",
-      "price": "100000011",
-      "id": 8
-    }
-  ]
+    "products": [{
+            "id": 6,
+            "name": "SP 6 update",
+            "price": "100000"
+        },
+        {
+            "name": "NGUYỄN THÀNH ĐẠT ",
+            "price": "100000",
+            "id": 7
+        },
+        {
+            "name": "sp8",
+            "price": "100000011",
+            "id": 8
+        }
+    ]
 }

@@ -17,7 +17,7 @@ export const update = (products: ProductType) => {
     const url = `/products/${products.id}`; 
     return instance.put(url, products);
 }
-export const read = (id?: number) => {
+export const read = (id: number) => {
     const url = `/products/${id}`;
     return instance.get(url);
 }

@@ -8,7 +8,7 @@ type ProductAddProps = {
 }
 type FromValues = {
     name: string,
-    price: number,
+    price: number
 };
 
 const ProductAdd = (props: ProductAddProps) => {
